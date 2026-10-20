@@ -1,0 +1,19 @@
+﻿using MauiApp1.Views;
+using Microsoft.Extensions.DependencyInjection;
+
+namespace MauiApp1
+{
+    public partial class App : Application
+    {
+        public App()
+        {
+            InitializeComponent();
+        }
+
+        protected override Window CreateWindow(IActivationState? activationState)
+        {
+            //return new Window(new AppShell());
+            return new Window(new SignInPage1());
+        }
+    }
+}
